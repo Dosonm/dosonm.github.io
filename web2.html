@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>web2</title>
+        <link href="web2.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <input type="button" value="day" onclick="
+            document.querySelector('body').style.background='white';
+            document.querySelector('body').style.color='black';
+            ">
+        <input type="button" value="night" onclick="
+        document.querySelector('body').style.background='black' ;
+        document.querySelector('body').style.color='white';
+        ">
+        <input id=night_day type="button" value="day" onclick="
+        var target=document.querySelector('body')
+        if(this.value==='day')
+        {
+            target.style.background='black' ;
+            target.style.color='white';
+            this.value='night';
+        }   
+            else
+            {
+                document.querySelector('body').style.background='white';
+                document.querySelector('body').style.color='black';
+                document.querySelector('#night_day').value='day';
+            }
+        ">
+        <h1>css</h1>
+        I am using a centred div to contain an image and some text
+         but want my <a href="https://www.naver.com/" title="네이버" target="_blank">text</a> to have the same margin/alignment as the 
+         text. Right now the title is placed on the extreme left of 
+         the page and I want it to have a responsive margin on the left.
+    </body>
+    <!--
+        query는 요청
+        문서의 바디라는 태그를 콕 찝어서 그 태그의 스타일을 지정하는데 
+        그것의 배경을 검정 혹은 폰트색(color)을 검정으로 한다
+        태그가 아닌 아이디를 콕 찝을 떈 getelementid('')하면 된다
+    -->

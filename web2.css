@@ -1,0 +1,18 @@
+/* block level element*/
+a{
+    color:green;
+    border-style: solid;
+    border-color: lightgreen;
+    border-width: 1px;
+    
+}
+/* inline level element*/
+h1{
+    text-align: center;
+    color: red;
+    border-color: blue;
+    border-width: 10px;
+    border-style: solid;
+    width: 100px;
+    margin-left: 450px;
+}
